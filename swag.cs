@@ -1,24 +1,12 @@
  static void Main(string[] args)
         {  
             bool stack = false;
+            string[] suits = { "hearts", "spades", "diamonds" , "clubs" };
             while (stack == false) {
-                for(int suitNum = 0; suitNum < 4; suitNum++)
+                for(int suitNum = 0; suitNum < suits.Length; suitNum++)
                 {
-                    string suitName = "";
-                    switch (suitNum) {
-                        case 1:
-                            suitName = "hearts";
-                            break;
-                        case 2:
-                            suitName = "spades";
-                            break;
-                        case 3:
-                            suitName = "diamonds";
-                            break;
-                        case 4:
-                            suitName = "clubs";
-                            break;
-                    }
+                    string suitName = suits[suitNum];
+                 
                     Console.WriteLine(suitName);
                     for (int cardNum = 0; cardNum < 14; cardNum++) {
                         string resource = "";
