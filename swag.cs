@@ -30,6 +30,9 @@
                             cardName = "_"+cardNum+"_of_"+suitName;
                         }
                         resource = cardName;
+                        Bitmap cardBitmap = (Bitmap)Properties.Resources.ResourceManager.GetObject(resource);
+                        cards.Add(cardBitmap);
+                        numbers.Add(cardNum);
                         Console.WriteLine(cardName);
                     }
                 }
